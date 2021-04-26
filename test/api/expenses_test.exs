@@ -6,9 +6,30 @@ defmodule Api.ExpensesTest do
   describe "expenses" do
     alias Api.Expenses.Expense
 
-    @valid_attrs %{category: "some category", description: "some description", payday: "some payday", provider: "some provider", status: "some status", value: "some value"}
-    @update_attrs %{category: "some updated category", description: "some updated description", payday: "some updated payday", provider: "some updated provider", status: "some updated status", value: "some updated value"}
-    @invalid_attrs %{category: nil, description: nil, payday: nil, provider: nil, status: nil, value: nil}
+    @valid_attrs %{
+      category: "some category",
+      description: "some description",
+      payday: "some payday",
+      provider: "some provider",
+      status: "some status",
+      value: "some value"
+    }
+    @update_attrs %{
+      category: "some updated category",
+      description: "some updated description",
+      payday: "some updated payday",
+      provider: "some updated provider",
+      status: "some updated status",
+      value: "some updated value"
+    }
+    @invalid_attrs %{
+      category: nil,
+      description: nil,
+      payday: nil,
+      provider: nil,
+      status: nil,
+      value: nil
+    }
 
     def expense_fixture(attrs \\ %{}) do
       {:ok, expense} =

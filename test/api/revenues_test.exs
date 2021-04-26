@@ -6,9 +6,30 @@ defmodule Api.RevenuesTest do
   describe "revenues" do
     alias Api.Revenues.Revenue
 
-    @valid_attrs %{category: "some category", client: "some client", description: "some description", payday: "some payday", status: "some status", value: "some value"}
-    @update_attrs %{category: "some updated category", client: "some updated client", description: "some updated description", payday: "some updated payday", status: "some updated status", value: "some updated value"}
-    @invalid_attrs %{category: nil, client: nil, description: nil, payday: nil, status: nil, value: nil}
+    @valid_attrs %{
+      category: "some category",
+      client: "some client",
+      description: "some description",
+      payday: "some payday",
+      status: "some status",
+      value: "some value"
+    }
+    @update_attrs %{
+      category: "some updated category",
+      client: "some updated client",
+      description: "some updated description",
+      payday: "some updated payday",
+      status: "some updated status",
+      value: "some updated value"
+    }
+    @invalid_attrs %{
+      category: nil,
+      client: nil,
+      description: nil,
+      payday: nil,
+      status: nil,
+      value: nil
+    }
 
     def revenue_fixture(attrs \\ %{}) do
       {:ok, revenue} =

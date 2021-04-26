@@ -12,6 +12,5 @@ defmodule Api.Repo.Migrations.CreateRevenues do
 
       timestamps()
     end
-
   end
 end

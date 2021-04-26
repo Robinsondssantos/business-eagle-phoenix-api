@@ -20,7 +20,14 @@ defmodule ApiWeb.RevenueControllerTest do
     status: "some updated status",
     value: "some updated value"
   }
-  @invalid_attrs %{category: nil, client: nil, description: nil, payday: nil, status: nil, value: nil}
+  @invalid_attrs %{
+    category: nil,
+    client: nil,
+    description: nil,
+    payday: nil,
+    status: nil,
+    value: nil
+  }
 
   def fixture(:revenue) do
     {:ok, revenue} = Revenues.create_revenue(@create_attrs)

@@ -12,6 +12,5 @@ defmodule Api.Repo.Migrations.CreateExpenses do
 
       timestamps()
     end
-
   end
 end

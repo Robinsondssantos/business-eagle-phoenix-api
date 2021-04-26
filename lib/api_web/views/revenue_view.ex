@@ -11,12 +11,14 @@ defmodule ApiWeb.RevenueView do
   end
 
   def render("revenue.json", %{revenue: revenue}) do
-    %{id: revenue.id,
+    %{
+      id: revenue.id,
       description: revenue.description,
       client: revenue.client,
       category: revenue.category,
       payday: revenue.payday,
       value: revenue.value,
-      status: revenue.status}
+      status: revenue.status
+    }
   end
 end

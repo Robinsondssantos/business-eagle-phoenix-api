@@ -20,7 +20,14 @@ defmodule ApiWeb.ExpenseControllerTest do
     status: "some updated status",
     value: "some updated value"
   }
-  @invalid_attrs %{category: nil, description: nil, payday: nil, provider: nil, status: nil, value: nil}
+  @invalid_attrs %{
+    category: nil,
+    description: nil,
+    payday: nil,
+    provider: nil,
+    status: nil,
+    value: nil
+  }
 
   def fixture(:expense) do
     {:ok, expense} = Expenses.create_expense(@create_attrs)

@@ -11,12 +11,14 @@ defmodule ApiWeb.ExpenseView do
   end
 
   def render("expense.json", %{expense: expense}) do
-    %{id: expense.id,
+    %{
+      id: expense.id,
       description: expense.description,
       provider: expense.provider,
       category: expense.category,
       payday: expense.payday,
       value: expense.value,
-      status: expense.status}
+      status: expense.status
+    }
   end
 end
